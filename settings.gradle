@@ -1,0 +1,4 @@
+rootProject.name = 'Backend'
+include 'module-app'
+include 'module-domain'
+include 'module-infrastructure'
