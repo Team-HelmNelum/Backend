@@ -1,4 +1,15 @@
 rootProject.name = 'Backend'
-include 'module-app'
-include 'module-domain'
-include 'module-infrastructure'
+include 'module-api'
+include 'module-event:module-event-app'
+include 'module-event:module-event-domain'
+include 'module-event:module-event-infrastructure'
+
+include 'module-reservation:module-reservation-app'
+include 'module-reservation:module-reservation-domain'
+include 'module-reservation:module-reservation-infrastructure'
+
+include 'module-payment:module-payment-app'
+include 'module-payment:module-payment-domain'
+include 'module-payment:module-payment-infrastructure'
+
+

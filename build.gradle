@@ -30,14 +30,14 @@ subprojects {
     }
 
     dependencies {
+        // 공통 의존성
         implementation 'org.springframework.boot:spring-boot-starter-web'
         implementation 'org.springframework.boot:spring-boot-starter-validation'
         implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.2'
-        // Lombok
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
 
-        // 테스트
+        // 테스트 의존성
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
         testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     }
@@ -45,7 +45,6 @@ subprojects {
     test {
         useJUnitPlatform()
     }
-
 }
 
 bootJar {
